@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>TITLE</title>
+     <meta name="description" content="DESCRIPTION">
+    <link rel="stylesheet" href="styles/index.css">
+
+     <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+ </head>
+
+ <body>
+   <div class="grid">
+     <div class="grid-item">
+       <div class="tab">
+         <button class="tab-link"  id= "button1">1 (static)</button>
+         <button class="tab-link" id="button2">2( relative)</button>
+         <button class="tab-link" id="button3">3 (absolute)</button>
+         <button class="tab-link" id="button4">4 (relative + absolute)</button>
+
+       </div>
+     </div>
+
+     <div class="grid-item">
+       <div id = "1" class = "tab-content box"> <!-- Static positioning tab --->
+           <h2>Static</h2>
+           <p>There's no positioning applied to me.</p>
+       </div>
+
+       <div id="2" class = "tab-content box"> <!-- Relative positioning tab --->
+           <h2>position: relative</h2>
+           <p>I am 300px from the left and 200px from the top of where
+           I am normally layed out</p>
+       </div>
+
+       <div id = "3" class = "tab-content box"> <!-- Absolute positioning tab --->
+           <h2>position:absolute</h2>
+           <p>This time I am 20% from the top and 2% from the right.</p>
+       </div>
+
+       <div id="4" class="tab-content box"><!-- Relative + Absolute positioning tab --->
+         <div>
+             <h2>position:relative and absolute</h2>
+             <p>This time I am 20% from the top and 2% from the right.</p>
+         </div>
+       </div>
+     </div>
+
+   </div>
+
+   <script src = "js/index.js"></script>
+ </body>
+
+ </html>
